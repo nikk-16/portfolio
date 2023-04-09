@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Portfolio</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+   <div class="container">
+      <div class="navigation">
+         <ul>
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Contact</a></li>
+         </ul>
+      </div>
+      <div class="main">
+         <div class="topbar">
+            <a href="#" class="logo">Portfolio</a>
+            <div class="toggle">
+               <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+         </div>
+         <section class="banner" id="banner">
+            <div class="content">
+               <div class="imgBx">
+                  <img src="user.jpg" alt="">
+               </div>
+               <!-- <div class="mh-promo wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s"
+                  style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                  <span>Hello I'm</span>
+               </div> -->
+               <br>
+               <h3>Nikhil Chaurasiya</h3>
+               <p>I am ML Developer.</p>
+               <a href="https://drive.google.com/file/d/1GusqKJH3oyhjSP8ut6LUPGuh_IjLdl4R/view?usp=share_link"  target="_blank" class="btn">Resume</a>
+               <ul class="socialMedia">
+                  <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+               </ul>
+            </div>
+         </section>
+         <!--about-->
+         <section class="about adjust" id = "about">
+            <div class="title">
+               <h2>About Me</h2>
+            </div>
+            <div class="content">
+               <div class="textBox">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit repellat doloremque culpa unde ab et vitae adipisci odit, libero accusamus nam, corporis molestias suscipit nisi recusandae dolores aliquid, eligendi sed delectus! Cumque repellat, repellendus, quasi explicabo qui voluptate, iste fugit iusto est omnis quisquam ex aspernatur aperiam aliquam illum in commodi </p>
+                  <div class="skills">
+                     <ul>
+                         <li><span>php</span></li>
+                         <li><span>html</span></li>
+                         <li><span>css</span></li>
+                         <li><span>php</span></li>
+                         <li><span>wordpress</span></li>
+                         <li><span>React</span></li>
+                         <li><span>Javascript</span></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="imgBx">
+                  <img src="about.png" alt="">
+               </div>
+            </div>
+         </section>
+         <!-- <div class="hero-img wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s"
+            style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.6s; animation-name: fadeInUp;">
+            <div class="img-border">
+               <img src="about.png" alt="" class="img-fluid" style="height: 500px; width: 820px;">
+            </div>
+         </div> -->
+      </div>
+
+   </div>
+   <script>
+      let toggle = document.querySelector('.toggle');
+      let topbar = document.querySelector('.topbar');
+      let navigation = document.querySelector('.navigation');
+      let main = document.querySelector('.main');
+      toggle.onclick = function () {
+         toggle.classList.toggle('active');
+         topbar.classList.toggle('active');
+         navigation.classList.toggle('active');
+         main.classList.toggle('active');
+      }
+   </script>
+</body>
+
+</html>
