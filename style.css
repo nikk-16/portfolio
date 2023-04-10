@@ -177,7 +177,7 @@ section {
    display: flex;
    justify-content: center;
    align-items: center;
-   padding: 0% 180px;
+   padding: 0% 80px;
 }
 
 .banner .content {
@@ -193,6 +193,7 @@ section {
    height: 350px;
    overflow: hidden;
    border-radius: 50%;
+   margin-top: 90px;
    margin-bottom: 20px;
 }
 
@@ -233,7 +234,8 @@ p {
    font-size: 22px;
    font-weight: 400;
    letter-spacing: 1px;
-   margin-top: 10px;
+   margin: 10px;
+   margin-bottom: 80px;
    text-decoration: none;
    font-style: bold;
 }
@@ -245,7 +247,7 @@ p {
 
 .socialMedia {
    /* background: #2196f3; */
-   position: absolute;
+   position: static;
    bottom: 40px;
    display: flex;
 }
@@ -318,8 +320,8 @@ p {
 }
 
 .about .content .textBox {
-   width: 49%;
-   min-width: 49%;
+   width: 50%;
+   min-width: 50%;
 }
 
 .about .content .imgBx {
@@ -387,13 +389,16 @@ p {
 
 @media only screen and (max-width: 800px) {
    div.textBox {
-     display: none;
+      display: none;
    }
-   div.about.content {
+   .about .content {
       display: flex;
-      justify-content: space-between;
+      justify-content: justify;
       margin-top: 40px;
-      margin-left: 50px;
-      margin-right: 50px;
+      margin-left: 35px;
+      margin-right: 35px;
+   }
+   .about .content .imgBx {
+      margin-left: 10px;
    }
  }
