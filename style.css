@@ -130,6 +130,7 @@ body {
    font-size: 24px;
    color: var(--black);
 }
+
 /* @keyframes fadeInUp {
    from {
      opacity: 0;
@@ -165,36 +166,37 @@ body {
    border-top-right-radius: 20px;
    border-bottom-right-radius: 20px;
    border-bottom-left-radius: 0px;
-} 
+}
 
 section {
    position: relative;
    min-height: 100vh;
 }
 
-.banner{
+.banner {
    display: flex;
    justify-content: center;
    align-items: center;
    padding: 0% 180px;
 }
 
-.banner .content{
+.banner .content {
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
 }
 
-.banner .content .imgBx{
+.banner .content .imgBx {
    position: relative;
-   width: 280px;
-   height: 280px;
+   width: 350px;
+   height: 350px;
    overflow: hidden;
    border-radius: 50%;
    margin-bottom: 20px;
 }
-.banner .content .imgBx img{
+
+.banner .content .imgBx img {
    /* height: vh; */
    position: absolute;
    top: 0;
@@ -203,6 +205,7 @@ section {
    height: 100%;
    object-fit: cover;
 }
+
 .main .banner .content h3 {
    /* font-size: 35px; */
    position: relative;
@@ -221,7 +224,7 @@ p {
    padding: 10px;
 }
 
-.content .btn{
+.content .btn {
    position: relative;
    display: inline-block;
    padding: 10px 30px;
@@ -235,23 +238,23 @@ p {
    font-style: bold;
 }
 
-.content .btn:hover{
+.content .btn:hover {
    background-color: #cacaca;
    color: black;
 }
 
-.socialMedia{
+.socialMedia {
    /* background: #2196f3; */
    position: absolute;
-   bottom: 20px;
+   bottom: 40px;
    display: flex;
 }
 
-.socialMedia li{
+.socialMedia li {
    list-style: none;
 }
 
-.socialMedia li a{
+.socialMedia li a {
    display: inline-block;
    width: 40px;
    height: 40px;
@@ -262,30 +265,32 @@ p {
    align-items: center;
    text-decoration: none;
    color: var(--black);
-   font-size: 1.5em;;
+   font-size: 1.5em;
+   ;
 }
 
-.socialMedia li a:hover{
+.socialMedia li a:hover {
    background: var(--black2);
    color: #fff;
 }
 
-.adjust{
+.adjust {
    position: relative;
    min-height: 100vh;
-   padding:  0 40px;
-   padding-top: 80px;
+   padding: 0 20px;
+   padding-top: 60px;
    background: var(--white);
    color: var(--black);
    display: inline-block;
 }
 
-.title{
+.title {
    width: 100%;
    text-align: center;
+   margin-top: 40px;
 }
 
-.title h2{
+.title h2 {
    position: relative;
    text-transform: uppercase;
    letter-spacing: 2px;
@@ -293,7 +298,7 @@ p {
    margin-bottom: 30px;
 }
 
-.title h2::before{
+.title h2::before {
    content: '';
    position: absolute;
    left: 50%;
@@ -304,47 +309,91 @@ p {
    background: var(--black);
 }
 
-.about .content{
+.about .content {
    display: flex;
    justify-content: space-between;
    margin-top: 40px;
+   margin-left: 100px;
+   margin-right: 100px;
 }
 
-.about .content .textBox{
+.about .content .textBox {
    width: 49%;
    min-width: 49%;
 }
 
-.about .content .imgBx{
+.about .content .imgBx {
    margin-left: 35px;
 }
 
-.about .content .imgBx img{
+.about .content .imgBx img {
    max-width: 100%;
 }
 
-.skills{
+.skills {
    display: inline-block;
    word-break: break-all;
    margin-bottom: 20px;
    margin-top: 20px;
 }
-.skills ul{
+
+.skills ul {
    border: 0;
    padding: 0;
    margin: 0;
 }
-.skills ul li{
+
+.skills ul li {
    margin: 5px 10px;
    border-radius: 7px;
    margin-bottom: 20px;
    padding: 4px 0px;
    display: inline-block;
 }
-.skills ul li span{
+
+.skills ul li span {
    list-style: none;
-   font-size: 25px;
+   font-size: 20px;
    border: 3px solid #0bceaf;
-   padding: 8px 14px;
+   padding: 10px 16px;
    border-radius: 25px;
 }
+
+/* @keyframes rotation {
+   from {
+     transform: rotate(0deg);
+   }
+   to {
+     transform: rotate(60deg);
+   }
+ } */
+
+.skills ul li span:hover {
+   background-color: #0bceaf;
+   border: white;
+   /* animation: rotation 0.8s infinite linear; */
+   cursor: pointer;
+}
+
+.skills h3{
+   margin: 5px 10px;
+   border-radius: 7px;
+   margin-bottom: 20px;
+   padding: 4px 0px;
+   display: flex;
+   box-sizing: border-box;
+   border-radius: 2px;
+}
+
+@media only screen and (max-width: 800px) {
+   div.textBox {
+     display: none;
+   }
+   div.about.content {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      margin-left: 50px;
+      margin-right: 50px;
+   }
+ }
