@@ -12,6 +12,7 @@
    --black2: #333;
    --white: #fff;
    --white2: #fff;
+   
 }
 
 body {
@@ -189,8 +190,8 @@ section {
 
 .banner .content .imgBx {
    position: relative;
-   width: 350px;
-   height: 350px;
+   width: 320px;
+   height: 320px;
    overflow: hidden;
    border-radius: 50%;
    margin-top: 90px;
@@ -199,7 +200,7 @@ section {
 
 .banner .content .imgBx img {
    /* height: vh; */
-   position: absolute;
+   position: relative;
    top: 0;
    left: 0;
    width: 100%;
@@ -207,8 +208,7 @@ section {
    object-fit: cover;
 }
 
-.main .banner .content h3 {
-   /* font-size: 35px; */
+.content h3 {
    position: relative;
    font-size: 35px;
    padding: 3px;
@@ -289,7 +289,9 @@ p {
 .title {
    width: 100%;
    text-align: center;
+   justify-content: center;
    margin-top: 40px;
+   margin-left: 50px;
 }
 
 .title h2 {
@@ -298,6 +300,8 @@ p {
    letter-spacing: 2px;
    font-size: 1.5em;
    margin-bottom: 30px;
+   justify-content: center;
+   align-items: center;
 }
 
 .title h2::before {
@@ -389,7 +393,8 @@ p {
 
 @media only screen and (max-width: 800px) {
    div.textBox {
-      display: none;
+      /* display: none; */
+      word-wrap: normal;
    }
    .about .content {
       display: flex;
@@ -402,3 +407,5 @@ p {
       margin-left: 10px;
    }
  }
+
+
