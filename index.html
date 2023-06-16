@@ -10,18 +10,19 @@
       integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="javascript" href="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js">
 </head>
 
 <body>
    <div class="container">
       <div class="navigation">
          <ul>
-            <li><a href="#banner">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#banner" onclick = "toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick = "toggleMenu();">About</a></li>
+            <li><a href="#education-experience" onclick = "toggleMenu();">Education</a></li>
+            <li><a href="#projects" onclick = "toggleMenu();">Project</a></li>
+            <!-- <li><a href="#">Testimonials</a></li> -->
+            <li><a href="#contact" onclick = "toggleMenu();">Contact</a></li>
          </ul>
       </div>
       <div class="main">
@@ -31,7 +32,7 @@
                <i class="fa fa-bars" aria-hidden="true"></i>
             </div>
          </div>
-         
+
          <section class="banner" id="banner">
             <div class="content">
                <div class="imgBx">
@@ -42,80 +43,311 @@
                   <span>Hello I'm</span>
                </div> -->
                <br>
-               <div><h3>Nikhil Chaurasiya</h3></div>
+               <div>
+                  <h3>Nikhil Chaurasiya</h3>
+               </div>
                <!-- <h3>Nikhil Chaurasiya</h3> -->
                <p>I am ML Developer.</p>
                <!-- <a href="https://drive.google.com/file/d/1GusqKJH3oyhjSP8ut6LUPGuh_IjLdl4R/view?usp=share_link"  target="_blank" class="btn">Resume</a> -->
                <a href="#about" class="btn">More About Me</a>
                <ul class="socialMedia">
-                  <li><a href="mailto:nikhilchaurasiya16401@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-                  <li><a href="http://www.linkedin.com/in/nikk16"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                  <li><a href="http://www.github.com/nikk-16"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-                  <li><a href="http://www.twitter.com/Nikkhilarious"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                  <li><a href="mailto:nikhilchaurasiya16401@gmail.com"><i class="fa fa-envelope-o"
+                           aria-hidden="true"></i></a></li>
+                  <li><a href="http://www.linkedin.com/in/nikk16" target="_blank"><i class="fa fa-linkedin-square"
+                           aria-hidden="true"></i></a></li>
+                  <li><a href="http://www.github.com/nikk-16" target="_blank"><i class="fa fa-github-square"
+                           aria-hidden="true"></i></a>
+                  </li>
+                  <li><a href="http://www.twitter.com/Nikkhilarious" target="_blank"><i class="fa fa-twitter-square"
+                           aria-hidden="true"></i></a></li>
                </ul>
             </div>
          </section>
 
          <!--about-->
-         <section class="about adjust" id = "about">
+         <section class="about adjust" id="about">
             <div class="title">
                <h2>About Me</h2>
             </div>
             <div class="content">
                <div class="textBox">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit repellat doloremque culpa unde ab et vitae adipisci odit, libero accusamus nam, corporis molestias suscipit nisi recusandae dolores aliquid, eligendi sed delectus! Cumque repellat, repellendus, quasi explicabo qui voluptate, iste fugit iusto est omnis quisquam ex aspernatur aperiam aliquam illum in commodi </p>
-                  <div class="skills">
+                  <p>Aspiring computer programmer with a BTech degree in Computer Science and with a keen interest in
+                     machine
+                     learning and data science. With a moderate level knowledge in the field of computer science, I am
+                     seeking
+                     an entry-level programmer or coder position to continue expanding my knowledge of different
+                     languages and
+                     systems.</p>
+                  <!-- <div class="skills">
                      <h3>Skills:</h3>
                      <ul>
-                         <li><span>php</span></li>
-                         <li><span>html</span></li>
-                         <li><span>css</span></li>
-                         <li><span>php</span></li>
-                         <li><span>wordpress</span></li>
-                         <li><span>React</span></li>
-                         <li><span>Javascript</span></li>
+                        <li><span>php</span></li>
+                        <li><span>html</span></li>
+                        <li><span>css</span></li>
+                        <li><span>php</span></li>
+                        <li><span>wordpress</span></li>
+                        <li><span>React</span></li>
+                        <li><span>Javascript</span></li>
                      </ul>
-                  </div>
+                  </div> -->
                </div>
                <div class="imgBx">
                   <img src="about.png" alt="">
                </div>
             </div>
+            <div class="skills">
+               <h3>Skills:</h3>
+               <ul>
+                  <li><span>php</span></li>
+                  <li><span>html</span></li>
+                  <li><span>css</span></li>
+                  <li><span>php</span></li>
+                  <li><span>wordpress</span></li>
+                  <li><span>React</span></li>
+                  <li><span>Javascript</span></li>
+               </ul>
+            </div>
          </section>
 
          <!-- Education -->
-         <section class="education adjust" id = "education">
+         <!-- <section class="education adjust" id = "education">
             <div class="row">
                <div class="about-tabs">
-                  <!-- <span class="tab-item outer-shadow active" data-target=".skills">skills</span> -->
+                  
                   <span class="tab-item" data-target=".education">education</span>
                   
                   <span class="tab-item" data-target=".experience">experience</span>
                </div>
             </div>
+         </section> -->
+         <section class="education-experience adjust" id="education-experience">
+            <div class="row">
+               <div class="about-text">
+                  <div class="about-tabs">
+                     <button type="button" class="tab-item active" data-target="#education">
+                        Education
+                     </button>
+                     <button type="button" class="tab-item" data-target="#experience">
+                        Experience
+                     </button>
+                  </div>
+                  <!-- Education Start -->
+                  <div class="tab-content active" id="education">
+                     <div class="timeline">
+                        <div class="timeline-item">
+                           <span class="date">2020 - 2024</span>
+                           <h4>
+                              Bachelor of Technology -
+                              <span>Vellore Institute of Technology, Bhopal</span>
+                           </h4>
+                           <p>
+                              Branch: Computer Science Engineering Sp. in
+                              Artificial Intelligence and Machine Learning <br><br>
+                              CGPA : 9.06
+                           </p>
+                        </div>
+                        <div class="timeline-item">
+                           <span class="date">2018 - 2019</span>
+                           <h4>Intermediate - <span>St. Lawrence School, Unnao</span></h4>
+                           <p>Percentage : 89%</p>
+                        </div>
+                        <div class="timeline-item">
+                           <span class="date">2016 - 2017</span>
+                           <h4>High School - <span>St. Lawrence School, Unnao</span></h4>
+                           <p>Percentage : 90%</p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Education End -->
+
+                  <!-- Experience Start -->
+                  <div class="tab-content" id="experience">
+                     <div class="timeline">
+                        <div class="timeline-item">
+                           <span class="date">2022 - 2023</span>
+                           <h4>D2C Igniters Club</h4>
+                           <p>Position: Content Team Lead </p>
+                        </div>
+                        <div class="timeline-item">
+                           <span class="date">2021 - 2022</span>
+                           <h4>D2C Igniters Club</h4>
+                           <p>Position: Content Team Member </p>
+                        </div>
+                        <div class="timeline-item">
+                           <span class="date">2021 - 2022</span>
+                           <h4>GFG VIT Bhopal Chapter</h4>
+                           <p>Position: Management Team Member </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Experience End -->
          </section>
 
-         <!-- <div class="hero-img wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s"
+         <!--Projects-->
+         <section class="projects adjust" id ="projects">
+            <div class="title">
+               <h2> Projects</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum perferendis nemo, accusantium voluptas enim illo?</p>
+            </div>
+            <div class="content">
+               <div class="workBx">
+                  <div class="imgBx">
+                     <img src="CaptionGenerator.jpeg" alt="This Project aims to Generate Caption through Image">
+                     
+                  </div>
+                  <div class="textBx">
+                     <h3>Project 1</h3>
+                     <p>This Project aims to Generate Caption through Image</p>
+                  </div>
+               </div>
+               <div class="workBx">
+                  <div class="imgBx">
+                     <img src="Song Recommender.jpeg" alt="This Project aims to Generate Caption through Image">
+                     
+                  </div>
+                  <div class="textBx">
+                     <h3>Project 2</h3>
+                  </div>
+               </div>
+               <div class="workBx">
+                  <div class="imgBx">
+                     <img src="Cricket-pose-detector.png" alt="This Project aims to Generate Caption through Image">
+                  </div>
+                  <div class="textBx">
+                     <h3>Project 3</h3>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+
+
+         <!-- contact -->
+         <section class="contact adjust" id="contact">
+            <div class="title">
+               <h2>
+                  Let's say Hi
+               </h2>
+               <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, quae?
+               </p>
+            </div>
+            <div class="contactForm">
+               <div class="row">
+                  <input type="Name" placeholder="First Name" required>
+                  <input type="Name" placeholder="Last Name">
+               </div>
+               <div class="row">
+                  <input type="email" placeholder="E-mail Address" required>
+                  <input type="number" placeholder="Mobile No." required>
+               </div>
+               <div class="row2"> 
+                  <textarea type="text" placeholder="Send Message for me" required></textarea>
+               </div>
+               <div class="row2">
+                  <input type="submit" placeholder="Send">
+               </div>
+            </div>
+            <div class="bottom-c " id="bottom">
+               <div class="bottom-container">
+                  <a href="www.linkedin.com/in/nikk16">Linkedin</a>
+                  <a href="www.linkedin.com/in/nikk16">Instagram</a>
+                  <a href="www.linkedin.com/in/nikk16">Address</a>
+                  <p>Copyright © 2023 Nikhil Chaurasiya. All Rights Reserved.</p>
+               </div>
+            </div>
+         </section>
+
+         <!-- Contact Section Start
+         <section class="contact-section adjust" id="contact">
+            <div class="container">
+               <div class="row">
+                  <div class="title">
+                     <h2>Contact Me</h2>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="contact-form">
+                     <form>
+                        <div class="row">
+                           <div class="input-group">
+                              <input type="text" placeholder="First Name" class="input-control" required>
+                              <input type="text" placeholder="Last Name" class="input-control" required>
+                           </div>
+                           <div class="input-group">
+                              <input type="email" placeholder="Email" class="input-control" required>
+                              <input type="number" placeholder="Mobile No." class="input-control" required>
+                           </div>
+                           <div class="input-group2">
+                              <input type="text" placeholder="Subject" class="input-control" required>
+                           </div>
+                           <div class="input-group2">
+                              <textarea placeholder="Message" class="input-control" required></textarea>
+                           </div>
+                           <button type="submit" class="btn">Send Message</button>
+                        </div>
+                     </form>
+                  </div>
+
+                  <div class="contact-info">
+                     <div class="contact-info-item">
+                        <h3>Email</h3>
+                        <p> <a href="mailto:nikhilchaurasiya16401@gmail.com" target="_blank">
+                              nikhilchaurasiya16401@gmail.com
+                           </a>
+                        </p>
+                     </div>
+                     <div class="contact-info-item">
+                        <h3>Phone</h3>
+                        <p>+91 8948141191</p>
+                     </div>
+                     <div class="contact-info-item">
+                        <h3>LinkedIn</h3>
+                        <p><a href="https://in.linkedin.com/"
+                              target="_blank">https://linkedin.com/in/nikk16/</a></p>
+                     </div>
+                     <div class="contact-info-item">
+                        <h3>Github</h3>
+                        <p><a href="https://github.com/" target="_blank">https://github.com/nikk-16</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div> -->
+            <!-- <div class="bottom-c " id="bottom">
+               <div class="bottom-container">
+                  <a href="www.linkedin.com/in/nikk16">Linkedin</a>
+                  <a href="www.linkedin.com/in/nikk16">Linkedin</a>
+                  <a href="www.linkedin.com/in/nikk16">Linkedin</a>
+                  <p>Copyright © 2023 Nikhil Chaurasiya. All Rights Reserved.</p>
+               </div>
+            </div> -->
+         <!-- </section> -->
+         
+         <!-- Contact Section End -->
+
+         <!-- <div class="bottom-c adjust" id="bottom">
+            <div class="bottom-container">
+               <a href="www.linkedin.com/in/nikk16">Linkedin</a>
+               <a href="www.linkedin.com/in/nikk16">Linkedin</a>
+            </div>
+         </div> -->
+      </div>
+      
+
+
+
+      <!-- <div class="hero-img wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s"
             style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.6s; animation-name: fadeInUp;">
             <div class="img-border">
                <img src="about.png" alt="" class="img-fluid" style="height: 500px; width: 820px;">
             </div>
          </div> -->
-      </div>
+   </div>
 
    </div>
-   <script>
-      let toggle = document.querySelector('.toggle');
-      let topbar = document.querySelector('.topbar');
-      let navigation = document.querySelector('.navigation');
-      let main = document.querySelector('.main');
-      toggle.onclick = function () {
-         toggle.classList.toggle('active');
-         topbar.classList.toggle('active');
-         navigation.classList.toggle('active');
-         main.classList.toggle('active');
-      }
-   </script>
+   <script type="module" src="log.js"></script>
 </body>
 
 </html>
