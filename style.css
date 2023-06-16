@@ -581,12 +581,17 @@ section {
 
 
 
+.projects .title p{
+   font-size: larger;
+}
+
 .projects .content{
    display: grid;
    grid-template-columns: repeat(3,1fr);
    grid-gap: 30px;
-   margin: 50px 30px ;
+   margin: 30px 30px ;
    grid-row-gap: 150px;
+
 }
 
 .projects .content .workBx{
@@ -594,6 +599,8 @@ section {
    width: 100%;
    height: 150%;
    overflow: hidden;
+
+   border-radius: 3px;
 }
 
 .projects .content .workBx .imgBx{
@@ -603,6 +610,7 @@ section {
    transform: translateY(0);
    transition: 0.5s ease-in-out; 
    overflow: hidden;
+   border-radius: 3px;
 }
 .projects .content .workBx:hover .imgBx{
    width: 100%;
@@ -617,6 +625,8 @@ section {
    width: 100%;
    height: 50%;
    object-fit:fill;
+   border: 2px transparent rgb(53, 222, 205, 00.1s);
+   border-radius: 3px;
 }
 .projects .content .workBx .textBx{
    position: absolute;
@@ -626,6 +636,7 @@ section {
    height: 100%;
    background-color: #0bceaf;
    display: flex;
+   text-align: center;
    justify-content: center;
    align-items: center;
    transform: translateY(100%);
@@ -636,7 +647,7 @@ section {
 }
 .projects .content .workBx .textBx h3{
    color:#fff;
-   font-size: 1em ;
+   font-size: 17px ;
 }
 .projects .content .workBx .textBx p{
    color:#fff;
@@ -745,16 +756,16 @@ section {
 
 
 
-#bottom{
+/* #bottom{
    margin-bottom: 20px;
    padding: 0%;
-}
+} */
 .bottom-c{
    position: relative;
    background-color:#FEF7DC;
    color: #0F1123;
    width: 100%;
-   height: 20%;
+   height: 30%;
    margin: 0%;
    padding: 0%;
    text-align: center;
@@ -777,7 +788,7 @@ section {
    text-align: center;
    bottom: 0;
    color: #FFEACA;
-   margin: 20px 10px;
+   margin: 20px 20px;
    font-size: x-small;
    text-decoration:hwb(from color h w b);
  }

@@ -14,18 +14,6 @@
 </head>
 
 <body>
-   <!-- <script>
-      let prev = document.getElementById(b);
-      function toggleMenu(id) {
-         let element = document.getElementById(id);
-         if (prev !== null) {
-            let data = document.getElementById(prev);
-            data.style.opacity = null;
-         }
-         element.style.opacity = 100;
-         prev = id;
-      }
-   </script> -->
    <div class="container">
       <div class="navigation">
          <ul>
@@ -154,14 +142,14 @@
                            <p>Position: Java Backend Intern </p>
                         </div>
                         <div class="timeline-item">
-                           <span class="date">2021 - 2022</span>
-                           <h4></h4>
-                           <p>Position: Content Team Member </p>
+                           <span class="date">Jun 21 - Jul 22</span>
+                           <h4>The Visual Cinema</h4>
+                           <p>Position: Social Media Intern </p>
                         </div>
                         <div class="timeline-item">
-                           <span class="date">2021 - 2022</span>
-                           <h4>GFG VIT Bhopal Chapter</h4>
-                           <p>Position: Management Team Member </p>
+                           <span class="date">Dec 21 - Jan 22</span>
+                           <h4>LetsGrowMore</h4>
+                           <p>Data Science Internship</p>
                         </div>
                      </div>
                   </div>
@@ -175,8 +163,7 @@
          <section class="projects adjust" id="projects">
             <div class="title">
                <h2> Projects</h2>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum perferendis nemo, accusantium voluptas
-                  enim illo?</p>
+               <p>Few projects that I have worked on:</p>
             </div>
             <div class="content">
                <div class="workBx">
@@ -192,8 +179,7 @@
                </div>
                <div class="workBx">
                   <div class="imgBx">
-                     <img src="Song Recommender.jpeg" alt="This Project aims to Generate Caption through Image">
-
+                     <img src="Song Recommender.jpeg" alt="This Project aims to Recommend songs using User's mood ">
                   </div>
                   <div class="textBx">
                      <h3>Mood Based Song Recomendation</h3>
@@ -203,7 +189,7 @@
                </div>
                <div class="workBx">
                   <div class="imgBx">
-                     <img src="Cricket-pose-detector.png" alt="This Project aims to Generate Caption through Image">
+                     <img src="Cricket-pose-detector.png" alt="This Project aims to detect cricket pose">
                   </div>
                   <div class="textBx">
                      <h3>Cricket Pose Detector</h3>
@@ -220,10 +206,10 @@
          <section class="contact adjust" id="contact">
             <div class="title">
                <h2>
-                  Let's say Hi
+                  Let's say Hi!
                </h2>
                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, quae?
+                  
                </p>
             </div>
             <div class="contactForm">
@@ -244,9 +230,12 @@
             </div>
             <div class="bottom-c " id="bottom">
                <div class="bottom-container">
-                  <a href="www.linkedin.com/in/nikk16">Linkedin</a>
-                  <a href="www.linkedin.com/in/nikk16">Instagram</a>
-                  <a href="www.linkedin.com/in/nikk16">Address</a>
+                  <a href="https://twitter.com/Nikkhilarious" target="_blank"><i class="fa fa-twitter"
+                     aria-hidden="true"></i>Twitter</a>
+                  <a href="https://www.instagram.com/nik.hil16" target="_blank"><i class="fa fa-instagram"
+                     aria-hidden="true"></i>Instagram</a>
+                  <a href="https://goo.gl/maps/YzvqWnNaNjcHwFq16" target="_blank"><i class="fa fa-map-marker"
+                     aria-hidden="true"></i>Address</a>
                   <p>Copyright © 2023 Nikhil Chaurasiya. All Rights Reserved.</p>
                </div>
             </div>
@@ -254,6 +243,21 @@
       </div>
    </div>
    <script type="module" src="log.js"></script>
+   <script>
+      let prev = null;
+      let nav = document.getElementById('b');
+      nav.style.opacity = 100;
+      function toggleMenu(id) {
+         nav.style.opacity = null;
+         let element = document.getElementById(id);
+         if (prev !== null) {
+         let data = document.getElementById(prev);
+         data.style.opacity = null;
+         }
+         element.style.opacity = 100;
+         prev = id;
+      }
+   </script>
 </body>
 
 </html>
