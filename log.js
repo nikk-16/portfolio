@@ -25,10 +25,14 @@ tabsContainer.addEventListener("click" , (e) =>
     }
 });
 
-// fix menu active class issue for mobile devices
-function toggleMenu(){
-   let navigation = document.querySelector('.navigation');
-   let main = document.querySelector('.main');
-   navigation.classList.remove('active');
-   main.classList.remove('active');
-}
+// // fix menu active class issue for mobile devices
+// navigation.onclick = function toggleMenu(){
+// //    let navigation = document.querySelector('.navigation');
+//    let main = document.querySelector('.main');
+// //    let element = navigation.
+// //    element.style.opacity = 100;
+//    navigation.classList.style.opacity = 60;
+//    navigation.classList.remove('active');
+//    main.classList.remove('active');
+
+// }

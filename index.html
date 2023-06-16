@@ -14,15 +14,26 @@
 </head>
 
 <body>
+   <script>
+      let prev = document.getElementById(b);
+      function toggleMenu(id) {
+         let element = document.getElementById(id);
+         if (prev !== null) {
+            let data = document.getElementById(prev);
+            data.style.opacity = null;
+         }
+         element.style.opacity = 100;
+         prev = id;
+      }
+   </script>
    <div class="container">
       <div class="navigation">
          <ul>
-            <li><a href="#banner" onclick = "toggleMenu();">Home</a></li>
-            <li><a href="#about" onclick = "toggleMenu();">About</a></li>
-            <li><a href="#education-experience" onclick = "toggleMenu();">Education</a></li>
-            <li><a href="#projects" onclick = "toggleMenu();">Project</a></li>
-            <!-- <li><a href="#">Testimonials</a></li> -->
-            <li><a href="#contact" onclick = "toggleMenu();">Contact</a></li>
+            <li><a id="b" href="#banner" onclick="toggleMenu('b');">Home</a></li>
+            <li><a id="a" href="#about" onclick="toggleMenu('a');">About</a></li>
+            <li><a id="e" href="#education-experience" onclick="toggleMenu('e');">Education</a></li>
+            <li><a id="p" href="#projects" onclick="toggleMenu('p');">Project</a></li>
+            <li><a id="c" href="#contact" onclick="toggleMenu('c');">Contact</a></li>
          </ul>
       </div>
       <div class="main">
@@ -38,10 +49,6 @@
                <div class="imgBx">
                   <img src="user.jpg" alt="">
                </div>
-               <!-- <div class="mh-promo wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s"
-                  style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.1s; animation-name: fadeInUp;">
-                  <span>Hello I'm</span>
-               </div> -->
                <br>
                <div>
                   <h3>Nikhil Chaurasiya</h3>
@@ -51,7 +58,7 @@
                <!-- <a href="https://drive.google.com/file/d/1GusqKJH3oyhjSP8ut6LUPGuh_IjLdl4R/view?usp=share_link"  target="_blank" class="btn">Resume</a> -->
                <a href="#about" class="btn">More About Me</a>
                <ul class="socialMedia">
-                  <li><a href="mailto:nikhilchaurasiya16401@gmail.com"><i class="fa fa-envelope-o"
+                  <li><a href="mailto:nikhilchaurasiya16401@gmail.com"><i class="fa fa-envelope"
                            aria-hidden="true"></i></a></li>
                   <li><a href="http://www.linkedin.com/in/nikk16" target="_blank"><i class="fa fa-linkedin-square"
                            aria-hidden="true"></i></a></li>
@@ -78,18 +85,6 @@
                      an entry-level programmer or coder position to continue expanding my knowledge of different
                      languages and
                      systems.</p>
-                  <!-- <div class="skills">
-                     <h3>Skills:</h3>
-                     <ul>
-                        <li><span>php</span></li>
-                        <li><span>html</span></li>
-                        <li><span>css</span></li>
-                        <li><span>php</span></li>
-                        <li><span>wordpress</span></li>
-                        <li><span>React</span></li>
-                        <li><span>Javascript</span></li>
-                     </ul>
-                  </div> -->
                </div>
                <div class="imgBx">
                   <img src="about.png" alt="">
@@ -98,28 +93,18 @@
             <div class="skills">
                <h3>Skills:</h3>
                <ul>
-                  <li><span>php</span></li>
-                  <li><span>html</span></li>
-                  <li><span>css</span></li>
-                  <li><span>php</span></li>
-                  <li><span>wordpress</span></li>
-                  <li><span>React</span></li>
-                  <li><span>Javascript</span></li>
+                  <li><span>Java</span></li>
+                  <li><span>Python</span></li>
+                  <li><span>Machine Learning</span></li>
+                  <li><span>Deep Learning</span></li>
+                  <li><span>Data Analytics</span></li>
+                  <li><span>NLP</span></li>
+                  <li><span>Database Management</span></li>
                </ul>
             </div>
          </section>
 
-         <!-- Education -->
-         <!-- <section class="education adjust" id = "education">
-            <div class="row">
-               <div class="about-tabs">
-                  
-                  <span class="tab-item" data-target=".education">education</span>
-                  
-                  <span class="tab-item" data-target=".experience">experience</span>
-               </div>
-            </div>
-         </section> -->
+
          <section class="education-experience adjust" id="education-experience">
             <div class="row">
                <div class="about-text">
@@ -164,13 +149,13 @@
                   <div class="tab-content" id="experience">
                      <div class="timeline">
                         <div class="timeline-item">
-                           <span class="date">2022 - 2023</span>
-                           <h4>D2C Igniters Club</h4>
-                           <p>Position: Content Team Lead </p>
+                           <span class="date">May 23 - Ongoing</span>
+                           <h4>Blue Ocean Investments</h4>
+                           <p>Position: Java Backend Intern </p>
                         </div>
                         <div class="timeline-item">
                            <span class="date">2021 - 2022</span>
-                           <h4>D2C Igniters Club</h4>
+                           <h4></h4>
                            <p>Position: Content Team Member </p>
                         </div>
                         <div class="timeline-item">
@@ -184,31 +169,36 @@
             </div>
             <!-- Experience End -->
          </section>
+         
 
          <!--Projects-->
-         <section class="projects adjust" id ="projects">
+         <section class="projects adjust" id="projects">
             <div class="title">
                <h2> Projects</h2>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum perferendis nemo, accusantium voluptas enim illo?</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum perferendis nemo, accusantium voluptas
+                  enim illo?</p>
             </div>
             <div class="content">
                <div class="workBx">
                   <div class="imgBx">
                      <img src="CaptionGenerator.jpeg" alt="This Project aims to Generate Caption through Image">
-                     
+
                   </div>
                   <div class="textBx">
-                     <h3>Project 1</h3>
-                     <p>This Project aims to Generate Caption through Image</p>
+                     <h3>AI Image Captioning</h3>
+                     <a href=""></a>
+                     <!-- <p>This Project aims to Generate Caption through Image</p> -->
                   </div>
                </div>
                <div class="workBx">
                   <div class="imgBx">
                      <img src="Song Recommender.jpeg" alt="This Project aims to Generate Caption through Image">
-                     
+
                   </div>
                   <div class="textBx">
-                     <h3>Project 2</h3>
+                     <h3>Mood Based Song Recomendation</h3>
+                     <a href=""></a>
+                     <p></p>
                   </div>
                </div>
                <div class="workBx">
@@ -216,7 +206,9 @@
                      <img src="Cricket-pose-detector.png" alt="This Project aims to Generate Caption through Image">
                   </div>
                   <div class="textBx">
-                     <h3>Project 3</h3>
+                     <h3>Cricket Pose Detector</h3>
+                     <a href=""></a>
+                     <p></p>
                   </div>
                </div>
             </div>
@@ -243,7 +235,7 @@
                   <input type="email" placeholder="E-mail Address" required>
                   <input type="number" placeholder="Mobile No." required>
                </div>
-               <div class="row2"> 
+               <div class="row2">
                   <textarea type="text" placeholder="Send Message for me" required></textarea>
                </div>
                <div class="row2">
@@ -259,93 +251,7 @@
                </div>
             </div>
          </section>
-
-         <!-- Contact Section Start
-         <section class="contact-section adjust" id="contact">
-            <div class="container">
-               <div class="row">
-                  <div class="title">
-                     <h2>Contact Me</h2>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="contact-form">
-                     <form>
-                        <div class="row">
-                           <div class="input-group">
-                              <input type="text" placeholder="First Name" class="input-control" required>
-                              <input type="text" placeholder="Last Name" class="input-control" required>
-                           </div>
-                           <div class="input-group">
-                              <input type="email" placeholder="Email" class="input-control" required>
-                              <input type="number" placeholder="Mobile No." class="input-control" required>
-                           </div>
-                           <div class="input-group2">
-                              <input type="text" placeholder="Subject" class="input-control" required>
-                           </div>
-                           <div class="input-group2">
-                              <textarea placeholder="Message" class="input-control" required></textarea>
-                           </div>
-                           <button type="submit" class="btn">Send Message</button>
-                        </div>
-                     </form>
-                  </div>
-
-                  <div class="contact-info">
-                     <div class="contact-info-item">
-                        <h3>Email</h3>
-                        <p> <a href="mailto:nikhilchaurasiya16401@gmail.com" target="_blank">
-                              nikhilchaurasiya16401@gmail.com
-                           </a>
-                        </p>
-                     </div>
-                     <div class="contact-info-item">
-                        <h3>Phone</h3>
-                        <p>+91 8948141191</p>
-                     </div>
-                     <div class="contact-info-item">
-                        <h3>LinkedIn</h3>
-                        <p><a href="https://in.linkedin.com/"
-                              target="_blank">https://linkedin.com/in/nikk16/</a></p>
-                     </div>
-                     <div class="contact-info-item">
-                        <h3>Github</h3>
-                        <p><a href="https://github.com/" target="_blank">https://github.com/nikk-16</a></p>
-                     </div>
-                  </div>
-               </div>
-            </div> -->
-            <!-- <div class="bottom-c " id="bottom">
-               <div class="bottom-container">
-                  <a href="www.linkedin.com/in/nikk16">Linkedin</a>
-                  <a href="www.linkedin.com/in/nikk16">Linkedin</a>
-                  <a href="www.linkedin.com/in/nikk16">Linkedin</a>
-                  <p>Copyright © 2023 Nikhil Chaurasiya. All Rights Reserved.</p>
-               </div>
-            </div> -->
-         <!-- </section> -->
-         
-         <!-- Contact Section End -->
-
-         <!-- <div class="bottom-c adjust" id="bottom">
-            <div class="bottom-container">
-               <a href="www.linkedin.com/in/nikk16">Linkedin</a>
-               <a href="www.linkedin.com/in/nikk16">Linkedin</a>
-            </div>
-         </div> -->
       </div>
-      
-
-
-
-      <!-- <div class="hero-img wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s"
-            style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.6s; animation-name: fadeInUp;">
-            <div class="img-border">
-               <img src="about.png" alt="" class="img-fluid" style="height: 500px; width: 820px;">
-            </div>
-         </div> -->
-   </div>
-
    </div>
    <script type="module" src="log.js"></script>
 </body>
