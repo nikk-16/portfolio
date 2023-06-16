@@ -208,6 +208,7 @@ section {
    justify-content: center;
    align-items: center;
    padding: 0 80px;
+   margin-top: 40px;
    /* margin-bottom: 10px; */
 }
 
@@ -229,7 +230,6 @@ section {
 }
 
 .banner .content .imgBx img {
-   /* height: vh; */
    position: relative;
    top: 0;
    left: 0;

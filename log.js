@@ -9,6 +9,17 @@ toggle.onclick = function () {
    main.classList.toggle('active');
 }
 
+let prev = document.getElementById(b);
+function toggleMenu(id) {
+    let element = document.getElementById(id);
+    if (prev !== null) {
+    let data = document.getElementById(prev);
+    data.style.opacity = null;
+    }
+    element.style.opacity = 100;
+    prev = id;
+}
+
 // education 
 const tabsContainer = document.querySelector(".about-tabs"),
 education = document.querySelector(".education-experience");
@@ -36,3 +47,4 @@ tabsContainer.addEventListener("click" , (e) =>
 //    main.classList.remove('active');
 
 // }
+
